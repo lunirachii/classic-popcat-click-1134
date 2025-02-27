@@ -3,55 +3,75 @@
 <html lang="en">
 <head>
   <title>POPCAT CLASSIC</title>
-</head>
+  <style>
 
-<style>
-  /*<!--容器 box 高度100vh flex排版方向column 置中-->*/
-    .container {
+      .container {
 
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+        /*容器樣式 背景顏色 #bdaa90*/
+        background-color: #bdaa90;
 
-  /*容器樣式 背景顏色 #bdaa90*/
-    .container {
-      background-color: #bdaa90;
-    }
+        /*<!--容器 box 高度100vh flex排版方向column 置中-->*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
 
-  /*標題 box 寬度80% 上方間距 2em*/
-    .title {
+
+      }
+
+      .title {
+
+        /*標題 box 寬度80% 上方間距 2em*/
         width: 80%;
         margin-top: 2em;
-    }
+        /*標題 box 最大寬度 600px*/
+        max-width: 600px;
 
-  /*文字 box 寬度100%*/
-    .cat-img {
-        width: 100%;
-        font-size: 5em;
-        text-align: center;
-    }
+      }
 
-  /*文字樣式 文字置中 文字白色 大小80px -webkit-text-stroke 3px 黑色*/
-    .cat-img {
-        text-align: center;
-        color: white;
-        font-size: 80px;
-        -webkit-text-stroke: 3px black;
-    }
+      .cat-img {
 
-  /*文字 div 背景圖片 用 id 設定imgs/p.png 圖片靠下 填滿容器contain 不重複*/
-    #p {
-        background-image: url('imgs/p.png');
-        background-position: center bottom;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
+        /*文字 box 寬度100%*/
+          width: 100%;
+          font-size: 5em;
+          text-align: center;
 
-</style>
+        /*文字樣式 文字置中 文字白色 大小80px -webkit-text-stroke 3px 黑色*/
+          color: white;
+          text-align: center;
+          font-size: 80px;
+          -webkit-text-stroke: 3px black;
 
+        /*文字 div 排版填滿剩餘空間 */
+          flex: 1;
+
+        /*防止文字被選取*/
+          user-select: none;
+
+        /*文字 box 最大寬度 800px*/
+          max-width: 800px;
+      }
+
+    /*文字 div 背景圖片 用 id 設定imgs/p.png 圖片靠下 填滿容器contain 不重複*/
+      #p {
+          background-image: url('imgs/p.png');
+          background-position: center bottom;
+          background-size: contain;
+          background-repeat: no-repeat;
+      }
+
+      body {
+
+        /*body box 編距為0*/
+          margin: 0;
+
+        /*字型 sans-serif*/
+            font-family: sans-serif;
+      }
+
+  </style>
+</head>
 
 <body>
 
